@@ -13,6 +13,13 @@ function App () {
   const [list, setList] = React.useState([])
   return (
     <div className='App'>
+      <div className='backbutton'>
+        <button className='styled-button'>
+          <a className='linkback' href='https://izaiah.pro/work'>
+            &lt;&lt; Back
+          </a>
+        </button>
+      </div>
       <div className='content-wrapper'>
         {list.map(entry => (
           <div key={entry.id} className='listItem'>
